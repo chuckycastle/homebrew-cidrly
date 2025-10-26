@@ -8,10 +8,8 @@ class Cidrly < Formula
   depends_on "node@20"
 
   def install
-    system "npm", "install", *std_npm_args(prefix: false)
-    system "npm", "run", "build:prod"
-
-    # Install the built package
+    # The npm tarball already contains the built dist/ directory
+    # No need to run npm install or build:prod
     libexec.install Dir["*"]
 
     # Create a wrapper script to run cidrly
