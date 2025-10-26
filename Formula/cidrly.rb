@@ -9,7 +9,8 @@ class Cidrly < Formula
 
   def install
     # The npm tarball already contains the built dist/ directory
-    # No need to run npm install or build:prod
+    # Just need to install dependencies (not build)
+    system "npm", "install", *std_npm_args(prefix: false)
     libexec.install Dir["*"]
 
     # Create a wrapper script to run cidrly
