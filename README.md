@@ -45,10 +45,6 @@ cidrly is a modern, type-safe command-line tool for network engineers to plan an
 - VLAN management
 - Dual efficiency metrics (Supernet + Range)
 - Save/load network plans as JSON
-- 50% capacity planning rule
+- VLSM planning
 
 For more information, visit the [main repository](https://github.com/chuckycastle/cidrly).
-
-## License
-
-ISC
