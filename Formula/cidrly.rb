@@ -1,8 +1,8 @@
 class Cidrly < Formula
   desc "Network architecture and design planning CLI tool"
   homepage "https://github.com/chuckycastle/cidrly"
-  url "https://registry.npmjs.org/cidrly/-/cidrly-0.4.0.tgz"
-  sha256 "96c3b907761de5bef451fe6e4d555842ef2f2f9a02ece84fe588368247fb2945"
+  url "https://registry.npmjs.org/cidrly/-/cidrly-0.4.1.tgz"
+  sha256 "eba293addd1823480718a4b11bb84a250f07b13c6dd87c3a275ea5d8a36175a0"
   license "ISC"
 
   depends_on "node@20"
