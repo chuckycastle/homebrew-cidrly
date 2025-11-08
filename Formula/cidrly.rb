@@ -3,7 +3,7 @@ class Cidrly < Formula
   homepage "https://github.com/chuckycastle/cidrly"
   url "https://registry.npmjs.org/cidrly/-/cidrly-0.4.1.tgz"
   sha256 "eba293addd1823480718a4b11bb84a250f07b13c6dd87c3a275ea5d8a36175a0"
-  license "ISC"
+  license "CC-BY-NC-SA-4.0"
 
   depends_on "node@20"
 
