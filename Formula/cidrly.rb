@@ -2,10 +2,10 @@ class Cidrly < Formula
   desc "Network architecture and design planning CLI tool"
   homepage "https://github.com/chuckycastle/cidrly"
   url "https://registry.npmjs.org/cidrly/-/cidrly-0.4.5.tgz"
-  sha256 "c8d3eae160a892e32837db3dcae515e843e5383fef52b8141940c8bcf8b6d59f"
+  sha256 "3cd60141b4bb9c6806c7e5e64bb548cafbe8d0d668f846c7a1f70153a89f0320"
   license "CC-BY-NC-SA-4.0"
 
-  depends_on "node@20"
+  depends_on "node"
 
   def install
     # The npm tarball already contains the built dist/ directory
@@ -15,9 +15,9 @@ class Cidrly < Formula
 
     # Create a wrapper script to run cidrly
     (bin/"cidrly").write_env_script(
-      "#{Formula["node@20"].opt_bin}/node",
+      "#{Formula["node"].opt_bin}/node",
       "#{libexec}/dist/cli.js",
-      PATH: "#{Formula["node@20"].opt_bin}:$PATH"
+      PATH: "#{Formula["node"].opt_bin}:$PATH"
     )
   end
 
